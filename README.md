@@ -1,6 +1,7 @@
 # calc-form-php
 
 ## 機能概要
+* 作成するファイルはindex.phpであること
 * 下記入力フォームを用意すること
     1. 左辺
     2. 計算式
@@ -26,7 +27,17 @@
 
 ## デザイン概要
 * bootstrapでデザインすること
+    * CDN版、ダウンロード版どちらでも可
 * formに関してはinline formを利用し一行で作成すること
 * 左から「左辺」「計算式」「右辺」「＝」「計算結果」を表示すること
 * SESSIONに格納された各計算毎のSESSION情報をtable形式でformの下に表示すること
     * tableはtable-stripedを入れること（各行の色の指定はなし）
+
+---
+
+## Web Server 起動コマンド
+~~~sh
+$ docker-compose up -d
+~~~
+アクセスするURL
+> http://localhost:8080/
